@@ -173,3 +173,23 @@ footer {
     font-size: 1em;
   }
 }
+/* Animación fade-in */
+.card,
+.venta,
+.contacto {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover en tarjetas */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
